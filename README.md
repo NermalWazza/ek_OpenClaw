@@ -12,6 +12,9 @@ The design prioritises **cost control, auditability, reversibility, and security
 This is **not** an autonomous agent platform.  
 It is a **controlled execution environment** for experimenting with AI-assisted workflows under explicit governance.
 
+[ Global_Substrate_Settings ]  →  [ Substrate_Compute ]  →  [ ek_OpenClaw ]
+        (governance)                 (infra)                 (runtime)
+
 ---
 
 ## Design Principles
