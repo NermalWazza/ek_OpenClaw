@@ -1,15 +1,15 @@
 # ek_OpenClaw
 Knowledge Share - OpenClaw build and integration.
 
-# OpenClaw VM Substrate  
+# OpenClaw VM Substrate
 **Minimal, Governed AI-Agent Runtime (v0.x)**
 
 ## Overview
 
-This repository defines a **minimal Linux VM substrate** for running **OpenClaw** as a **human-in-the-loop AI agent runtime**.  
+This repository defines a **minimal Linux VM substrate** for running **OpenClaw** as a **human-in-the-loop AI agent runtime**.
 The design prioritises **cost control, auditability, reversibility, and security** over autonomy or scale.
 
-This is **not** an autonomous agent platform.  
+This is **not** an autonomous agent platform.
 It is a **controlled execution environment** for experimenting with AI-assisted workflows under explicit governance.
 
 [ Global_Substrate_Settings ]  →  [ Substrate_Compute ]  →  [ ek_OpenClaw ]
@@ -19,12 +19,12 @@ It is a **controlled execution environment** for experimenting with AI-assisted 
 
 ## Design Principles
 
-- Human-initiated execution only  
-- No unattended or background agents  
-- Explicit cost boundaries (API-metered)  
-- Minimal persistent state  
-- Low attack surface  
-- Easy teardown and redeploy  
+- Human-initiated execution only
+- No unattended or background agents
+- Explicit cost boundaries (API-metered)
+- Minimal persistent state
+- Low attack surface
+- Easy teardown and redeploy
 
 “Under-automated” is a feature at this stage.
 
@@ -112,14 +112,14 @@ There are **no implicit credentials** and no hidden call paths.
 
 This substrate intentionally excludes:
 
-- Autonomous or self-directing agents  
-- Multi-agent swarms  
-- Cron jobs, triggers, or unattended execution  
-- Write access to production systems or IaC  
-- GUI desktops or public endpoints  
-- Heavy observability stacks (ELK, Prometheus, etc.)  
-- Unbounded “memory” or vector stores  
-- Broad or unrestricted tool execution  
+- Autonomous or self-directing agents
+- Multi-agent swarms
+- Cron jobs, triggers, or unattended execution
+- Write access to production systems or IaC
+- GUI desktops or public endpoints
+- Heavy observability stacks (ELK, Prometheus, etc.)
+- Unbounded “memory” or vector stores
+- Broad or unrestricted tool execution
 
 Each exclusion is an architectural decision, not an omission.
 
@@ -135,10 +135,10 @@ This repository exists to support:
 - Incremental capability layering
 
 Future additions must be:
-1. Explicitly justified  
-2. Cost-bounded  
-3. Auditable  
-4. Easy to remove  
+1. Explicitly justified
+2. Cost-bounded
+3. Auditable
+4. Easy to remove
 
 ---
 
@@ -159,7 +159,6 @@ This will be the first packaged capability layered on top of the substrate.
 
 ## Status
 
-- **Current state:** Foundations complete (v0.x)  
-- **Posture:** Under-powered, under-automated, over-controlled  
+- **Current state:** Foundations complete (v0.x)
+- **Posture:** Under-powered, under-automated, over-controlled
 - **Next milestone:** First reproducible chat capability with cost visibility
-
